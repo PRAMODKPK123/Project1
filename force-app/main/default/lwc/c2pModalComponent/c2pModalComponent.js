@@ -9,7 +9,7 @@ export default class C2pModalComponent extends LightningElement {
             
         }
         )
-        this.dispatchEvent(newEvent)
+        this.dispatchEvent(newEvent);
     }
 
     footerHandler()
