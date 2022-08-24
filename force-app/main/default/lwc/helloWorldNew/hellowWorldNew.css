@@ -1,0 +1,8 @@
+.greetings-toCSS{
+  color: green;
+}
+
+:host
+{
+  color: blueviolet;background-color: burlywood;
+}

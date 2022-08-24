@@ -1,0 +1,10 @@
+<aura:component >
+	<aura:attribute name = "Name" type = "string"  required = "true" />
+    <aura:attribute name = "Price" type = "string" />
+    <aura:attribute name = "Quantity" type = "string" />
+    
+    
+    Name	:   {!v.Name}<br/>
+    Price	:	{!v.Price}<br/>
+    Quantity:{!v.Quantity}<br/>
+</aura:component>

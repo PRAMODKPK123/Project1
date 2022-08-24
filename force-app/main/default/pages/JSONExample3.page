@@ -1,0 +1,5 @@
+<apex:page controller="JSONExample3">
+    {!age} <br/><br/>
+    {!salary} <br/><br/>
+    {!std}
+</apex:page>

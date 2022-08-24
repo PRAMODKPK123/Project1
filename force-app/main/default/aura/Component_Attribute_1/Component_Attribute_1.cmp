@@ -1,0 +1,18 @@
+<aura:component >
+    <aura:attribute name = "empName" type= "string" default = "true"/>
+    <aura:attribute name = "Age" type= "integer"	description = "Employee Age" default="30"/>
+    <aura:attribute name = "salary" type= "decimal" default = "true"/>
+    <aura:attribute name = "experience" type= "integer" description ="roundoff the experience if deciaml"/>
+    
+    <!--Attribut Values are refeered as {!v.AttribbuteName}-->
+    
+    ==================Start=================
+    <br></br>
+	empName:   {!v.empName}<br></br>
+    Age	:{!v.Age}<br></br>
+    salary	:{!v.salary}<br></br>
+    experience	:{!v.experience}<br></br>
+    <br></br>
+    
+
+</aura:component>

@@ -1,0 +1,21 @@
+<apex:page controller="JSONExample9">
+    
+    <apex:form >
+        
+        <apex:pageBlock title="JSONParser">
+            
+            <apex:pageBlockButtons location="Top">
+                <apex:commandButton action="{!getData}" value="Name" reRender="one"/> 
+                 <apex:commandButton action="{!getInfo}" value="Salary" reRender="two"/>
+            </apex:pageBlockButtons>
+            
+            <apex:outputLabel value="{!Name}" id="one"/> <br/>
+            <apex:outputLabel value="{!Salary}" id="two"/>
+            <apex:pageBlockTable value="{!resMap}" var="a">
+                <apex:column value="{!a}" headerValue="Key"/>
+                <apex:column value="{!resMap[a]}" headerValue="Value"/>
+            </apex:pageBlockTable>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

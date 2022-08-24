@@ -1,0 +1,3 @@
+<apex:page controller="JSONExample6">
+    {!jsonstring}
+</apex:page>

@@ -1,0 +1,23 @@
+<apex:page controller="JSONExample7">
+    <apex:form >
+    	<apex:pageBlock >
+            <apex:pageBlockButtons location="Top" >
+             <apex:commandButton action="{!create}" value="Save"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Account section">
+            	<apex:pageBlockSectionItem >
+                	<apex:outputLabel value="Name"></apex:outputLabel>
+                	<apex:inputText value="{!accName}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                	<apex:outputLabel value="Phone"></apex:outputLabel>
+                	<apex:inputText value="{!phoneNum}"/>
+                </apex:pageBlockSectionItem>
+            
+            </apex:pageBlockSection>
+        
+        </apex:pageBlock>
+        {!Jsonstring}
+    </apex:form>
+</apex:page>

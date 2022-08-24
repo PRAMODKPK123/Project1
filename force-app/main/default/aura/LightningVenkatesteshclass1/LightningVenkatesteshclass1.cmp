@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" controller="LightningVenkateshclass1Controller" access="global" >
+    <aura:attribute name="EmployeeName" type="String" default="venkatesh"/>
+    <aura:attribute name="EmployeeNumber" type="integer" default="101"/>
+    <aura:attribute name="EmployeeContacts" type="List" default="['1234','1255']"/>
+    <aura:attribute name="EmployeeStatus" type="boolean" default="true"/>
+    
+    
+    <h1>Employee Name : {!v.EmployeeName}</h1><br></br>
+    <h1>Employee Number : {!v.EmployeeNumber}</h1><br></br>
+    <h1>Employee Contacts : {!v.EmployeeContacts}</h1><br></br>
+    <h1>Employee Working Status : {!v.EmployeeStatus}</h1>
+    
+    <lightning:button label="Set Data" variant="brand" onclick="{!c.setData}"/>
+</aura:component>

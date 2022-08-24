@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name = "lastName" type = "string" default = "Pramod" required = "true" />
+    <aura:attribute name = "firstName" type = "string" required = "true"/>
+    <aura:attribute name = "phone" type = "string" />
+ 
+    
+    
+    ===============start========================<br/>
+    lastName	:   {!v.lastName}<br/>
+    firstName	:	{!v.firstName}<br/>
+    Phone		:	{!v.phone}<br/>
+</aura:component>

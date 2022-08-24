@@ -1,0 +1,15 @@
+<apex:page controller="JSONExample8">
+    
+    <apex:pageBlock >
+        <apex:form >
+    	<apex:pageBlockSection >
+            <apex:inputText value="{!searchText}"/>
+             <apex:commandButton Value="search" action="{!Search}"/>
+        <!--	<apex:pageBlockButtons>
+             
+            </apex:pageBlockButtons> -->
+            {!JsonString}
+       </apex:pageBlockSection> 
+            </apex:form>
+    </apex:pageBlock>
+</apex:page>

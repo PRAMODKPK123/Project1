@@ -1,0 +1,15 @@
+<template>
+  <!-- <img src={tomImage}></img>  -->
+ <lightning-card>
+  <lightning-layout horizontal-align="center">
+    <lightning-layout-item>
+  <lightning-button label="Click Me" onclick={handleClick} class="slds-m-left_x-small"
+    
+  ></lightning-button>
+  <template if-true ={isTom}>
+  <img src={tomImage}></img>
+  </template>
+</lightning-layout-item>
+</lightning-layout>
+</lightning-card>
+</template>

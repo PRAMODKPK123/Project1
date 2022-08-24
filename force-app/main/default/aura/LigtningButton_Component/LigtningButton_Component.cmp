@@ -1,0 +1,14 @@
+<aura:component >
+    <lightning:button label = "Submit" />
+    <lightning:button label = "Title" title = "Title message"/>
+    <lightning:button iconName = "standard:account" label = "Account"/>
+    <lightning:button iconName = "standard:contact" label = "Contact"/>
+    <lightning:button iconName = "action:download" iconPosition= "left " label = "download"/>
+    <lightning:button label = "reset" disabled = "true"/>
+    <lightning:button label = "Contact" variant = "base"/>
+    <lightning:button label = "Contact" variant = "neutral"/>
+    <lightning:button label = "Contact" variant = "brand"/>
+    <lightning:button label = "Contact" variant = "success "/>
+    <lightning:button label = "Contact" variant = "destructive"/>
+    <lightning:button label = "Contact" variant = "inverse"/>
+</aura:component>

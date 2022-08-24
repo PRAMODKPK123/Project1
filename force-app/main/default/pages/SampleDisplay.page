@@ -1,0 +1,22 @@
+<apex:page controller="sample" sidebar="false" >
+<apex:form >
+    <apex:pageblock >
+        <apex:pageblockSection id="m" title="Contact Details" >
+            <apex:pageBlockTable value="{!con}" var="member">
+                <apex:column value="{!member.Name}"/>
+                <apex:column value="{!member.Phone}"/>
+            </apex:pageBlockTable>
+        </apex:pageblockSection>
+        
+        <apex:pageblockSection id="a" title="Account Details" >
+            <apex:pageBlockTable value="{!acc}" var="account">
+                <apex:column value="{!account.Name}"/>
+                <apex:column value="{!account.Phone}"/>
+            </apex:pageBlockTable>        
+        </apex:pageblockSection>      
+        <apex:pageBlockButtons location="bottom" >
+            <apex:commandButton value="Fetch" reRender="m,a" action="{!fetch}"/>
+        </apex:pageBlockButtons>  
+    </apex:pageblock>
+</apex:form>
+</apex:page>

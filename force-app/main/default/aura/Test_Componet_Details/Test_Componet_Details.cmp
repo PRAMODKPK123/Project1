@@ -1,0 +1,10 @@
+<aura:component >
+	<div>
+    Company Name  :<br></br>
+    Company ID    :<br></br>
+    Role		  :<br></br>
+    
+    
+    </div>
+    
+</aura:component>

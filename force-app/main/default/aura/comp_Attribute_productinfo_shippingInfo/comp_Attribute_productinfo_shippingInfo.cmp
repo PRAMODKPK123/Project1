@@ -1,0 +1,10 @@
+<aura:component >
+	
+    <aura:attribute name = "City" type = "string"  required = "true" />
+    <aura:attribute name = "State" type = "string" />
+    <aura:attribute name = "Pincode" type = "string" />
+    
+    City	:   {!v.City}<br/>
+    State	:	{!v.State}<br/>
+    Pincode		:{!v.Pincode}<br/>
+</aura:component>

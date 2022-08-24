@@ -1,0 +1,4 @@
+<apex:page controller="JSONExample2">
+    {!result1} <br/><br/>
+    {!result2}
+</apex:page>

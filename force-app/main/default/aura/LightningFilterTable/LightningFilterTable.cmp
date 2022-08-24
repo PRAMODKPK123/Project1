@@ -1,0 +1,46 @@
+<aura:component controller="LightningFilterTableController" implements="force:appHostable" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="accList" type="List"/>
+    <aura:attribute name="accname" type="string"/>
+    <!-- UI Design -->
+    
+    <lightning:card  title="Account List">
+        <div class="slds-p-around--medium">
+            <lightning:input label="Enter Name" value="{!v.accname}" />
+        </div>
+        <div class="slds-p-around--medium">
+            <lightning:button label="Search" variant="brand" onclick="{!c.searchData}"/>
+        </div>
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Opportunity Name">Account Name</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Account Name">Industry</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Close Date">Phone</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <aura:iteration items="{!v.accList}" var="acc">
+                    <tr class="slds-hint-parent">
+                        <td data-label="Account Name">
+                            <div class="slds-truncate" title="Cloudhub">{!acc.Name}</div>
+                        </td>
+                        <td data-label="Industry">
+                            <div class="slds-truncate" title="Cloudhub">{!acc.Industry}</div>
+                        </td>
+                        <td data-label="Phone">
+                            <div class="slds-truncate" title="Cloudhub">{!acc.Phone}</div>
+                        </td>
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>
+    </lightning:card>
+    
+</aura:component>

@@ -1,0 +1,8 @@
+<apex:page controller="JSONExample1">
+    {!integerresult} <br/><br/>
+    {!Decimalresult} <br/><br/>
+    {!AccountResult} <br/><br/>
+    {!integerresult1} <br/><br/>
+    {!Decimalresult1} <br/><br/>
+    {!AccountResult1}
+</apex:page>

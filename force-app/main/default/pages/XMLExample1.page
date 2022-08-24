@@ -1,0 +1,3 @@
+<apex:page controller="XMLExample1">
+    {!XMlstring}
+</apex:page>

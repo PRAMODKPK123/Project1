@@ -1,0 +1,4 @@
+<aura:component >
+    <c:Component_Student/>
+    <c:Component_Address/>
+</aura:component>

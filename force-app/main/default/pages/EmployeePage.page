@@ -1,0 +1,13 @@
+<apex:page controller="Employee" sidebar="False">
+    <apex:form >
+    <apex:pageBlock title="Details">
+    <apex:outputText > Your Name is  </apex:outputText>
+    
+      <apex:pageBlockButtons location="bottom" >
+            <apex:commandButton value="Employee"  action="{!Show}"/>
+        </apex:pageBlockButtons>   
+    </apex:pageBlock>
+    
+    </apex:form>
+    
+</apex:page>
